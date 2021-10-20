@@ -1,0 +1,109 @@
+/* 1. global config */
+
+    /* - all margins and paddings set to 0 */
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+
+/* 2. global style
+    
+    - set all default font family Noto Sans which you can get at google fonts
+    - set all the the line spacing to 1.4
+    - remove all anchor tag underline
+    - set a default margin for all paragraphs to 0.75 for top and bottom and 0 to left and right
+
+*/
+/* @media (min-width: 500px) and (max-width: 768px){ */
+    html, body {
+    font-family: 'Noto Sans Mono', monospace;
+    line-height: 1.4em;
+}
+/* a {
+    text-decoration: none;
+} */
+p{
+    margin: 0.75 0;
+}
+
+
+
+/* 3. settings
+
+    - create a rule where you can control the maximum width of your content
+    while adapting to browser widths
+    - create a rule to center all contents under this setting
+    - create a rule to set all elements inside of this setting to have
+    a "space inside" with a "0" from top and bottom and 32px using the "rem" units
+    in left and right
+    - and lastly set a rule on overflowing elements inside to hidden.
+
+*/
+/* @media (min-width: 500px) and (max-width: 768px){ */
+    #main-container {
+        max-width: 100%;
+        text-align: center;
+        overflow: hidden;
+        background-color: #fdf6f0;
+    }
+    #main-container .container {
+        text-align: center;
+        padding:  0 2rem;
+        margin: 2rem;
+    }
+    
+    .container .first-s{
+        color: #ff7600;
+    }
+
+    .container .l-heading {
+        margin: 2rem;
+        font-size: 1.75rem;
+    }
+    .container-2{
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+    }
+    .container-3{
+        display: flex;
+        margin: 0.75rem;
+        padding: 0.75rem;
+    }
+    .container-3 i{
+        background-color:#f8e2cf;
+        border-radius: 50%;
+        height: 3rem;
+        line-height: 1rem;
+        padding: 1rem;
+        margin-right: 0.75rem ;
+        margin-top: 2.5rem;
+    }
+    .container-3 h3{
+        color: #333;
+        padding-bottom: 0.75rem;
+        text-align: left;
+    }
+
+    .container-3 p{
+        color: #333;
+        text-align: left;
+        padding-bottom: 0.25rem;
+    }
+
+/* 
+    4.  Collaborative Task for Assessment
+
+    4.1  Your goal is to apply pertinent rules to produce same result(output)
+    as what the figure displays in assessment_output.png.
+
+    Color Values
+    - #f8e2cf
+    - #ff7600
+    - #fdf6f0
+    - #333
+*/
+
